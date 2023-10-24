@@ -61,6 +61,16 @@ section.widget-recently-viewed {
       color: #000;
     }
   }
+
+  .product__info--price-row{
+    gap: 7px;
+  }
+  .product__info--old-price-gross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75em;
+  }
 }
 
 .products-compact{
@@ -157,13 +167,6 @@ section.widget-recently-viewed {
     .custom-stock__wrapper {
       display: none;
     }
-  }
-
-  .grid-image__badges .grid-image__badge--price-discount {
-    background: var(--js-color-red);
-    font-weight: 300;
-    font-size: .7em;
-    margin-top: 0;
   }
 }
 

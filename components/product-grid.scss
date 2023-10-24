@@ -107,8 +107,37 @@
   }
 }
 
-@media screen and (max-width: 992px) {
 
+.discount-badge{
+  position: absolute;
+  margin-top: 0;
+  bottom: 15px;
+  left: 0;
+  font-size: .7em;
+  border-radius: 0 10px 10px 0;
+  font-weight: 300;
+  background: var(--js-color-red);
+}
+
+
+.grid-image__badges, .list-image__badges, .product-summary__image-badges {
+  height: 100%;
+  margin: 0;
+  left: 0;
+
+  .grid-image__badge--price-discount {
+    @extend .discount-badge;
+  }
+}
+
+.grid-image__badges .grid-image__badge--price-discount,
+.product-summary__image-badges  .product-summary__badge--price-discount,
+.list-image__badges .list-image__badge--price-discount{
+  @extend .discount-badge;
+}
+
+
+@media screen and (max-width: 992px) {
 
   .product-grid-element-mobile{
     .product__data{
@@ -157,5 +186,16 @@
     }
   }
 
+  .grid-image__badges,  {
+    .grid-image__badge--price-discount {
+      font-size: 0.5em !important;
+    }
+  }
+
+  .list-image__badges{
+    .list-image__badge--price-discount{
+      font-size: 0.5em !important;
+    }
+  }
 
 }

@@ -127,7 +127,40 @@
     &.is-active{
       background: #fff;
     }
+  }
 
+  .fancybox-navigation{
+    display: none;
+  }
+  .fancybox-thumbs {
+    bottom: 45px;
+    left: 0;
+    right: auto;
+    top: auto;
+    width: 100%;
+
+    .fancybox-thumbs__list {
+      grid-gap: 4px;
+      display: flex;
+      justify-content: center;
+
+      a{
+        background: #212529;
+        border-radius: 50%;
+        border-width: 0;
+        height: 6px;
+        width: 6px;
+        padding: 0;
+
+        &.fancybox-thumbs-active {
+          background: #adb5bd;
+        }
+
+        img{
+          display: none !important;
+        }
+      }
+    }
   }
 
   .grid-image__save-wishlist--saved:before, .grid-image__save-wishlist:before, .slider-image__save-wishlist--saved:before, .slider-image__save-wishlist:before{
