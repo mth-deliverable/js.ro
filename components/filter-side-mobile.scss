@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px){
+
+  [data-facets-menu] .mm-panels {
+    .mm-listitem{
+      border-bottom: 1px solid;
+      border-color: #f2f2f2 !important;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+}

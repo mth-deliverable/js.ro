@@ -1,0 +1,16 @@
+#bslot_107 {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0.3;
+}
+#bslot_107 .bslot-multi-icon__image-wrapper {
+  max-width: 70px !important;
+  height: 70px !important;
+}
+#bslot_107 .bslot-multi-icon__title {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=homepage.css.map */

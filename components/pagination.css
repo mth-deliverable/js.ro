@@ -1,0 +1,10 @@
+.pagination {
+  margin-top: 0;
+}
+.pagination .pagination__summary {
+  color: #454545;
+}
+
+.products-catalog__container .pagination {
+  margin-top: 2rem;
+}/*# sourceMappingURL=pagination.css.map */

@@ -1,0 +1,11 @@
+.page--catalog-products {
+  margin-bottom: 0;
+}
+.page--catalog-products h1 {
+  font-weight: 800;
+  width: 100%;
+  font-size: 2.5rem;
+}
+.page--catalog-products .categories__content--grid {
+  display: none !important;
+}/*# sourceMappingURL=catalog.css.map */

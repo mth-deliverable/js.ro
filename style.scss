@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --js-color-primary: #212529;
+  //--js-color-primary: #336699;
+  --js-font-family: "Poppins", sans-serif;
+  --js-font-size: 16px;
+
+  --js-background-light: #ffffff;
+
+  --js-border-radius: 10px;
+
+  //--js-text-color: #212529;
+  --js-text-color: #000;
+
+  //Colors
+  --js-color-gray: #f2f2f2;
+  --js-color-gray-second: #f4f5f6;
+  --js-color-green-light: #6CDC2D;
+
+  --js-color-red: #d64637;
+  --js-color-red-hover: #c94436;
+
+  --js-color-blue: #1f5fb2;
+  --js-color-blue-rgba: rgba(31, 95, 178, 0.05);
+
+  --js-cart-icon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVR4nO2Yv2tTURiGT6k6FKSIo1CkiCJIXdSig5PiIgoOBZfi5j+gm7bgUFOw4uaibg5C28FRDLrpYP8EC+KvoaVTUYPoI8ecxtdrYu93cu5NAvdZAkne9z3fPTn3+3Kdq6ioqOgLgDngO3/YBF4BU8CQ63doLrgTNTeAO5DllBskgN3AohTwwA0awKQUsNbhOweAVYplA1gC9lsLGMkYjbT5zjXKYx04aS1iTQwme7QDyhvTXRF4LOKrrgcARzIXMv8NBbguwvuFrvQ/AE9kHVMW4RkRvnY9guZPZ4vTFuFeEX4BhiN7zFf/atV6gB1B7/kJ7HEWgPdSxGGTuKlvBG3DqvUAE5K/6qwAT8XgcoS+hTnc/dZPi8VyjMEtMZjvQQELYjEbY3BJDJ4lmKsIn8/lzK+L7kJMAeNisN7lZKts5szXHjAWU8BQmEe22FfWDgBjotmI/m8CvBSj80Zti4jciyKvW/VqdE+MbpRYwKzIF6x6NboiRotl9QFgWXKnrXo1OipGb8vqxPw96U5Y9Wq0C/gm7Xw02ix/5mjIImTv7NZwRa7G2WQr7QBwTvJWXLdkOmI9ZrAzZA0DLyTvTgrTQ5n7+3PguJ8Wk6zatSbPE5nu6zMPpgqYIY7PwLFtvB8BP9poTbftPF15Rg60hbvbHNgsPuNmssW3mY8eAu9yjA2WHWgET+89XsjiK/oNmk1uHvgEfPQPg/17RemSE4LNT7SJ1CUnXMF/Dm1RuuSE7c/yoShdcjr8FG4XpUtOOIy1cEWth7hm1VVUVFS4vuEXKS4oztpbuVwAAAAASUVORK5CYII=");
+}
+
+body{
+  color: var(--js-text-color);
+}
+
+* {
+  font-family: var(--js-font-family) !important;
+}
+
+
+.page__heading{
+  font-weight: 700;
+}
+
+@import "misc.scss";
+@import "components/breadcrumbs.scss";
+@import "components/cart-sidebar.scss";
+@import "components/catalog.scss";
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/login.scss";
+@import "components/menu.scss";
+@import "components/newsletter.scss";
+@import "components/filters.scss";
+@import "components/filter-side-mobile.scss";
+@import "components/header.scss";
+@import "components/pagination.scss";
+@import "components/product-grid.scss";
+@import "components/product-sliders.scss";
+@import "components/search-results.scss";
+@import "components/form.scss";
+@import "sections/wishlist.scss";
+@import "pages/cart.scss";
+@import "pages/checkout.scss";
+@import "pages/homepage.scss";
+@import "pages/login.scss";
+@import "pages/product.scss";
+@import "pages/myaccount.scss";
+@import "general.scss";

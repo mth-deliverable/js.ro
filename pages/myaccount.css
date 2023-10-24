@@ -1,0 +1,86 @@
+.customer-menu .customer-menu__item {
+  margin-bottom: 5px;
+  background: transparent;
+  border-radius: 10px;
+  color: var(--js-text-color);
+  padding: 0;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.customer-menu .customer-menu__item .icon--secondary {
+  height: 1em;
+  line-height: inherit;
+  vertical-align: unset;
+  margin-right: 5px;
+}
+.customer-menu .customer-menu__item:hover {
+  background: var(--js-color-blue-rgba);
+  border: 1px solid var(--js-color-blue-rgba);
+}
+.customer-menu .customer-menu__item.customer-menu__item--active {
+  color: #ffffff;
+  background: var(--js-color-blue);
+  border: 1px solid var(--js-color-blue);
+}
+.customer-menu .customer-menu__item.customer-menu__item--active svg {
+  color: #ffffff;
+  fill: #ffffff;
+}
+.customer-menu .customer-menu__item a {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+}
+
+.page--account .account__addresses > div {
+  border-radius: var(--js-border-radius);
+}
+
+.page--account.page .page__content-wrapper .page__aside-head,
+.page--orders-list.page .page__content-wrapper .page__aside-head,
+.page--wishlist.page .page__content-wrapper .page__aside-head,
+.page--edit.page .page__content-wrapper .page__aside-head,
+.page--change-password.page .page__content-wrapper .page__aside-head {
+  margin-bottom: 20px;
+}
+.page--account.page .page__content-wrapper .page__aside-main,
+.page--orders-list.page .page__content-wrapper .page__aside-main,
+.page--wishlist.page .page__content-wrapper .page__aside-main,
+.page--edit.page .page__content-wrapper .page__aside-main,
+.page--change-password.page .page__content-wrapper .page__aside-main {
+  margin-right: 15px;
+  border-right: 1px solid #f2f2f2;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .page--account.page .page__content-wrapper .page__aside-head,
+  .page--orders-list.page .page__content-wrapper .page__aside-head,
+  .page--wishlist.page .page__content-wrapper .page__aside-head,
+  .page--edit.page .page__content-wrapper .page__aside-head,
+  .page--change-password.page .page__content-wrapper .page__aside-head {
+    margin-bottom: 20px;
+  }
+  .page--account.page .page__content-wrapper .page__aside-main,
+  .page--orders-list.page .page__content-wrapper .page__aside-main,
+  .page--wishlist.page .page__content-wrapper .page__aside-main,
+  .page--edit.page .page__content-wrapper .page__aside-main,
+  .page--change-password.page .page__content-wrapper .page__aside-main {
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+  .offcanvas-content .page__aside-head {
+    display: none !important;
+  }
+  .offcanvas-content .customer-menu .customer-menu__item a {
+    padding: 0.75rem 0;
+  }
+  .offcanvas-content .customer-menu .customer-menu__item.customer-menu__item--active, .offcanvas-content .customer-menu .customer-menu__item:hover {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--js-text-color);
+  }
+  .offcanvas-content .customer-menu .customer-menu__item.customer-menu__item--active svg, .offcanvas-content .customer-menu .customer-menu__item:hover svg {
+    color: var(--js-text-color);
+    fill: var(--js-text-color);
+  }
+}/*# sourceMappingURL=myaccount.css.map */

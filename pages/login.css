@@ -1,0 +1,8 @@
+.page--login .page__content-wrapper {
+  padding: 40px;
+  background: var(--js-color-gray-second);
+  border-radius: 10px;
+  border: 1px solid #e2e2e9;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,12 @@
+.breadcrumb {
+  background-color: var(--js-color-green-light);
+  border-bottom: none;
+}
+.breadcrumb .breadcrumb__item > a > a {
+  color: #252525;
+}
+.breadcrumb .breadcrumb__item > a > span {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=breadcrumbs.css.map */

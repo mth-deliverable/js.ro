@@ -1,0 +1,31 @@
+.page--catalog-products {
+  margin-bottom: 0;
+  h1 {
+    font-weight: 800;
+    width: 100%;
+    color: #000;
+    text-align: center;
+  }
+
+  .categories__content--grid {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .page--catalog-products {
+
+    .catalog-actions{
+      border-radius: var(--js-border-radius);
+    }
+
+    .catalog-actions .form-select, .facets-toggle__label{
+      font-size: 11px !important;
+    }
+
+    h1 {
+      margin-bottom: 10px !important;
+    }
+
+  }
+}

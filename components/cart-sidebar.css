@@ -1,0 +1,102 @@
+.cart-drawer__title {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.cart-drawer {
+  border-top: none;
+}
+.cart-drawer .drawer-items__remove-item .icon {
+  color: var(--js-color-blue);
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: var(--js-color-gray);
+  border-radius: 10px;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 10px;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(odd) > td:nth-of-type(1) {
+  padding: 0;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(odd) > td:nth-of-type(2) {
+  width: calc(100% - 6rem);
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(even) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 25px;
+  padding-left: 7rem;
+  padding-right: 15px;
+  border: none;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(even) > td:nth-of-type(1) {
+  width: 60%;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(even) > td:nth-of-type(1) .quantity-spinner {
+  min-width: 70px;
+  max-width: 70px;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr:nth-child(even) > td:nth-of-type(2) {
+  width: 40%;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__body > tr > td {
+  background: #ffffff;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row {
+  border: 15px solid #ffffff;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row .drawer-items__item-name {
+  font-weight: 600;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row .drawer-items__item-name,
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row .drawer-items__options {
+  display: -webkit-box;
+  display: block;
+  font-size: 0.85rem;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 1.2;
+  min-height: 1rem;
+  overflow: hidden;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row .drawer-items__image {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cart-drawer .drawer-items__table-wrapper .drawer-items__row .drawer-items__line-total {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-drawer__totals-container {
+  font-weight: 500;
+}
+.cart-drawer__totals-container .cart-drawer-totals__item--subtotal {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.cart-drawer__actions button,
+.cart-drawer__actions a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.1em;
+}/*# sourceMappingURL=cart-sidebar.css.map */

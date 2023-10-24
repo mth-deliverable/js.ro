@@ -1,0 +1,89 @@
+header [data-tippy-root] {
+  transition: all 1s ease;
+  margin: -15px 0 0 0;
+  visibility: hidden;
+  animation: slide-top 0.3s forwards;
+}
+header [data-tippy-root] .tippy-box[data-theme~=light] {
+  border-radius: 0 0 5px 5px;
+  padding: 15px 0;
+}
+header [data-tippy-root] .menu-dropdown {
+  width: 300px;
+}
+header [data-tippy-root] .menu-dropdown > li:nth-of-type(1) {
+  display: none !important;
+}
+header [data-tippy-root] .menu-dropdown img {
+  border-width: 1px;
+}
+header [data-tippy-root] .menu-dropdown a {
+  width: 100%;
+  line-height: 1;
+  text-decoration: none !important;
+}
+header [data-tippy-root] .menu-dropdown a:hover {
+  background: #f7f7f7;
+}
+@keyframes slide-top {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.header__menu-list > *:nth-last-child(1) a {
+  color: var(--js-color-green-light);
+}
+
+.header__menu-item > a {
+  text-transform: none;
+  font-size: 1rem;
+  color: #fafafa;
+  border-top: 2px solid transparent;
+  border-top: none;
+}
+.header__menu-item > a:hover {
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-top: none;
+  box-shadow: inset 0 -3px 0 0 var(--js-color-green-light);
+  background: #1d1c1c;
+}
+.header__menu-item.header__menu-item--opened > a {
+  box-shadow: inset 0 -3px 0 0 var(--js-color-green-light);
+  background: #1d1c1c;
+}
+.header__menu-item.header__menu-item--expandable {
+  position: relative;
+}
+.header__menu-item.header__menu-item--expandable.header__menu-item--opened:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  left: 50%;
+  margin-left: -7px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #ffffff;
+  display: none !important;
+}
+
+.mobile-menu__root .mobile-menu__menu-item > * {
+  border-bottom: 1px solid #353535;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mobile-menu__root .mobile-menu__menu-item > * img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  [data-facets-menu] .mm-navbar__title span {
+    color: #ffffff;
+  }
+}/*# sourceMappingURL=menu.css.map */

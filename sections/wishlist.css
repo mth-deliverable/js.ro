@@ -1,0 +1,14 @@
+.page--wishlist {
+  min-height: 40vh;
+}
+
+.wishlist__empty {
+  padding: 1rem 0;
+}
+.wishlist__empty .wishlist__empty-image {
+  height: auto;
+  width: 7rem;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=wishlist.css.map */

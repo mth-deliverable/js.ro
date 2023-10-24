@@ -1,0 +1,22 @@
+.breadcrumb__item:not(:first-of-type):after {
+  content: "›";
+  height: 10px;
+  width: 10px;
+  line-height: 0.5;
+  font-size: 1.2em;
+  color: gray;
+  transform: none;
+  background: transparent;
+}
+
+@media screen and (min-width: 992px){
+  .page__aside-breadcrumb{
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .page__aside-breadcrumb{
+    display: none;
+  }
+}

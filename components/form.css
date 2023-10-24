@@ -1,0 +1,22 @@
+.form__row input:not([type=checkbox]):not([type=radio]),
+.form__row select {
+  border: 1px solid #e2e2e9;
+  padding: 10px 15px;
+}
+.form__row input[type=checkbox],
+.form__row input[type=radio] {
+  border-color: #cccccc;
+}
+
+.form__row--floating input:not([type=checkbox]):not([type=radio]):not([type=hidden]):-webkit-autofill ~ label,
+.form__row--floating input:not([type=checkbox]):not([type=radio]):not([type=hidden]):focus-within ~ label,
+.form__row--floating input:not([type=checkbox]):not([type=radio]):not([type=hidden]):not(:placeholder-shown) ~ label,
+.form__row--floating select:-webkit-autofill ~ label,
+.form__row--floating select:focus-within ~ label,
+.form__row--floating select:not(:placeholder-shown) ~ label,
+.form__row--floating textarea:-webkit-autofill ~ label,
+.form__row--floating textarea:focus-within ~ label,
+.form__row--floating textarea:not(:placeholder-shown) ~ label {
+  border: none !important;
+  color: var(--js-text-color);
+}/*# sourceMappingURL=form.css.map */

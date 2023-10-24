@@ -1,0 +1,133 @@
+.cart-drawer__title {
+  margin-top: 30px;
+  font-weight: 500;
+}
+.cart-drawer {
+  min-height: 100%;
+  border-top: none;
+
+  .drawer-items__remove-item .icon {
+    color: var(--js-color-blue);
+  }
+  .cart-drawer__empty {
+    min-height: 90vh;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .drawer-items__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: var(--js-color-gray-second);
+    border-radius: 10px;
+
+    > tr {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      background: #ffffff;
+      // border-color: #ffffff;
+      // border-style: solid;
+      // border-width: 10px;
+      // border: 15px solid #ffffff;
+      &:nth-child(odd) {
+        > td:nth-of-type(1) {
+          padding: 0;
+        }
+
+        > td:nth-of-type(2) {
+          width: calc(100% - 6rem);
+        }
+      }
+
+      &:nth-child(even) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: -50px;
+        margin-bottom: 15px;
+        padding-left: 7rem;
+        padding-right: 15px;
+        border: none;
+
+        > td:nth-of-type(1) {
+          width: 60%;
+
+          .quantity-spinner {
+            min-width: 70px;
+            max-width: 70px;
+          }
+        }
+
+        > td:nth-of-type(2) {
+          width: 40%;
+        }
+      }
+
+      > td {
+        background: #ffffff;
+      }
+    }
+  }
+  .drawer-items__row {
+    .drawer-items__item-name {
+      font-weight: 600;
+    }
+
+    .drawer-items__item-name,
+    .drawer-items__options {
+      display: -webkit-box;
+      display: block;
+      font-size: 0.85rem;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-height: 1.2;
+      min-height: 1rem;
+      overflow: hidden;
+    }
+
+    .drawer-items__image {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .drawer-items__line-total {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+}
+
+.cart-drawer-totals__item--shipping{
+  color: var(--js-text-color);
+  font-weight: 400;
+}
+
+.cart-drawer__totals-container {
+  .cart-drawer-totals__item--subtotal {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+
+.cart-drawer__actions {
+  button,
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+}

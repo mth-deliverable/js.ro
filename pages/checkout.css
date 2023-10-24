@@ -1,0 +1,158 @@
+.page--checkout {
+  background: #f5f5f5;
+}
+
+.checkout-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+}
+.checkout-container > .checkout-container {
+  padding: 30px 0 0 0;
+}
+.checkout-container #checkout__shipping_payment,
+.checkout-container #checkout_preview__shipping_payment {
+  background: transparent;
+  padding: 10px 0;
+}
+.checkout-container div#checkout__shipping_method .form__single-choice-option,
+.checkout-container #checkout__payment_method .form__single-choice-option {
+  background-color: #f2f2f2 !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#checkout .cart-summary__body,
+#checkout_preview .cart-summary__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#checkout .cart-summary__body > tr,
+#checkout_preview .cart-summary__body > tr {
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  flex-wrap: wrap;
+}
+#checkout .cart-summary__body > tr .cart-summary__cell--image,
+#checkout_preview .cart-summary__body > tr .cart-summary__cell--image {
+  width: 17%;
+}
+#checkout .cart-summary__body > tr .cart-summary__cell--image img,
+#checkout_preview .cart-summary__body > tr .cart-summary__cell--image img {
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+}
+#checkout .cart-summary__body > tr .cart-summary__cell--details,
+#checkout_preview .cart-summary__body > tr .cart-summary__cell--details {
+  width: 55%;
+}
+#checkout .cart-summary__body > tr .cart-summary__cell--price,
+#checkout_preview .cart-summary__body > tr .cart-summary__cell--price {
+  width: 25%;
+}
+#checkout .cart-summary__body > tr .cart-summary__cell--price > div,
+#checkout_preview .cart-summary__body > tr .cart-summary__cell--price > div {
+  font-size: 1.2rem;
+}
+#checkout .page__aside-main,
+#checkout_preview .page__aside-main {
+  justify-content: flex-start;
+}
+#checkout .page__aside-main .cart-summary,
+#checkout_preview .page__aside-main .cart-summary {
+  height: auto;
+}
+
+#checkout_preview__shipping_payment {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+}
+#checkout_preview__shipping_payment .form__single-choice-option {
+  background-color: #f2f2f2 !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.checkout-totals span {
+  text-transform: unset;
+  font-size: 1rem;
+}
+
+.custom-position-checkout-buttons {
+  position: sticky;
+  top: 30px;
+  margin-top: 30px;
+}
+
+.site-checkout .btn-primary {
+  background-color: var(--js-color-red);
+  border-radius: var(--js-border-radius);
+}
+
+.site-checkout .btn-primary:hover {
+  background-color: var(--js-color-red-hover);
+}
+
+label[for=coupon_code] {
+  border: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .checkout-container {
+    padding: 30px 15px;
+  }
+  .checkout-container > .checkout-container {
+    padding-bottom: 0;
+  }
+  .page--checkout .page__content {
+    padding: 2rem 0;
+  }
+  .page--checkout .page__aside-main {
+    padding: 2rem 15px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .page--checkout .page__aside-main .cart-summary__row {
+    background: #f2f2f2 !important;
+  }
+  .page--checkout .page__aside-main .cart-summary__cell--image {
+    width: 80px !important;
+  }
+  .page--checkout .page__aside-main .cart-summary__cell--details {
+    width: calc(100% - 80px) !important;
+  }
+  .page--checkout .page__aside-main .cart-summary__cell--details .cart-summary__info--item-name {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 1.2;
+    overflow: hidden;
+  }
+  .page--checkout .page__aside-main .cart-summary__cell--price {
+    align-self: flex-start;
+    padding-left: 90px;
+    width: 100% !important;
+    margin-top: 0;
+    text-align: left;
+    padding-top: 0;
+    margin-top: -7px;
+    font-weight: 500;
+  }
+  .page--checkout .page__aside-main .cart-summary__info--line-total {
+    font-size: 1.1rem !important;
+  }
+  .checkout-totals {
+    padding-top: 10px;
+  }
+  .checkout-totals .checkout-totals__item span {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,26 @@
+.footer__menu .footer__menu-title {
+  color: #cccccc;
+}
+.footer__menu ul.footer__menu-list li a {
+  color: #aaaaaa;
+}
+.footer__menu ul.footer__menu-list li a:hover {
+  color: #ffffff;
+}
+
+.footer__links a[href="https://www.merchantpro.ro"] {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  #footer .accordion__header button {
+    padding-left: 15px;
+    color: #cccccc;
+  }
+  #footer .accordion__collapse .footer__menu-list li a {
+    color: #aaaaaa;
+  }
+  #footer .accordion__collapse .footer__menu-list li a:hover {
+    color: #ffffff;
+  }
+}/*# sourceMappingURL=footer.css.map */

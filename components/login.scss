@@ -1,0 +1,55 @@
+.offcanvas.drawer-user-login{
+  #quick_login__submit{
+    margin-right: 0;
+  }
+
+  .offcanvas-title{
+    width: 100%;
+    margin-top: 70px;
+    h1{
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+
+  .page--login{
+    padding-top: 0;
+  }
+
+}
+
+.page--login{
+  .page__heading{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .page.page--login{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .page__heading {
+      margin-bottom: 20px;
+      margin-top: 15px;
+    }
+    .form__toggle{
+      justify-content: center;
+    }
+    .form__buttons {
+      padding-left: 0;
+      padding-right: 0;
+      > * {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+      }
+
+    }
+  }
+
+}

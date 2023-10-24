@@ -1,0 +1,35 @@
+.footer__menu {
+  .footer__menu-title {
+    color: #cccccc;
+  }
+
+  ul.footer__menu-list li a {
+    color: #aaaaaa;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.footer__links a[href='https://www.merchantpro.ro']
+{
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    .accordion__header button {
+      padding-left: 15px;
+      color: #cccccc;
+    }
+
+    .accordion__collapse .footer__menu-list li a {
+      color: #aaaaaa;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

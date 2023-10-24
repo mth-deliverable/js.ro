@@ -1,0 +1,136 @@
+.custom-wishlist,
+.grid-image__save-wishlist,
+.slider-image__save-wishlist {
+
+
+  //&:before {
+  //  color: #ffffff;
+  //}
+
+  svg {
+    color: var(--js-color-red);
+    text-shadow: 0 0 0 #0000;
+  }
+}
+
+.grid-image__badge--new,
+.product-summary__badge--new,
+.list-image__badge--new {
+  display: none !important;
+}
+
+.btn-primary:not(.btn-facebook),
+.custom-add-to-cart {
+  background-color: var(--js-color-red);
+  border-color: var(--js-color-red);
+  color: #fff;
+}
+
+.btn-facebook {
+  background-color: #4267b2 !important;
+  border-color: #4267b2 !important;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: var(--js-color-red-hover);
+  border-color: var(--js-color-red-hover);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: var(--js-color-red);
+  color: var(--js-color-red);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--js-color-red-hover);
+  border-color: var(--js-color-red-hover);
+  color: #fff;
+}
+
+.widget-products-grid__heading {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.bslot-multi-image__image-wrapper,
+.bslot-grid__image-wrapper,
+.splide__slide {
+  border-radius: var(--js-border-radius);
+  overflow: hidden;
+}
+
+.offcanvas-title h1 {
+  font-weight: 700;
+}
+
+.product--grid [class*="__image-wrapper"] {
+  background: transparent;
+}
+
+.form__single-choice--tabs input[type=radio]:checked~label,.form__single-choice--tabs label:hover {
+  border-bottom-color: var(--js-color-green-light);
+  position: relative;
+}
+
+.mm-navbars{
+  .mm-btn--next:after, .mm-btn--prev:before {
+    border-color: #fff;
+  }
+}
+
+.page__heading{
+  color: var(--js-text-color) !important;
+}
+
+
+.product-summary__badge--price-discount, .list-image__badge--price-discount, .grid-image__badge--price-discount{
+  font-size: .75em;
+  font-weight: 400;
+  background: var(--js-color-red);
+}
+
+#customer_update__cancel{
+  color: var(--js-color-blue);
+  text-decoration: none;
+}
+
+.coupon-code__toggle{
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: .8em;
+  text-align: center;
+  color: var(--js-color-blue);
+  text-decoration: underline;
+
+  &:hover{
+    color: var(--js-color-blue);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .product-summary__badge--price-discount, .list-image__badge--price-discount, .grid-image__badge--price-discount{
+    font-size: .65em;
+    margin-top: 0;
+  }
+
+  .splide__pagination__page{
+    width: 6px;
+    height: 6px;
+    margin: 2px;
+  }
+
+  .grid-image__save-wishlist--saved:before, .grid-image__save-wishlist:before, .slider-image__save-wishlist--saved:before, .slider-image__save-wishlist:before{
+    background-color: #dee2e6;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    border-radius: 50%;
+    width: 1.8em;
+    height: 1.8em;
+  }
+}
+

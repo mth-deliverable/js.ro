@@ -1,0 +1,80 @@
+.page--login{
+
+  .page__content-wrapper{
+    max-width: 430px;
+  }
+  .form-details{
+    margin-top: 1rem;
+  }
+  .form-details__already-customer{
+    flex-direction: column;
+    justify-content: center;
+    font-size: .9em;
+
+    a{
+      width: 100%;
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--js-color-red);
+      color: var(--js-color-red);
+
+      &:hover{
+        background: var(--js-color-red);
+        color: #ffffff;
+      }
+    }
+  }
+  button#customer_login__submit{
+    text-transform: uppercase;
+  }
+
+  #customer_login__forgot{
+    font-size: .9em;
+    &:hover{
+      color: var(--js-color-blue) ;
+    }
+  }
+
+}
+
+.page--login, #password_recovery{
+  .form__buttons{
+    flex-direction: column;
+    > * {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  button, a{
+    padding: .55rem 1rem;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .page--signup{
+    .form__buttons{
+      flex-direction: column;
+      justify-content: center;
+      > *{
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .form__row--toggle{
+      font-size: .8em;
+    }
+
+    .form-details{
+      margin-top: 5px;
+
+      .divider{
+        padding-top: 0;
+      }
+    }
+
+  }
+
+}

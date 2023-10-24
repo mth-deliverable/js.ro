@@ -1,0 +1,10 @@
+@media screen and (max-width: 992px) {
+  [data-facets-menu].mm-panels .mm-listitem {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  [data-facets-menu].mm-panels .mm-listitem:after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=filter-side-mobile.css.map */

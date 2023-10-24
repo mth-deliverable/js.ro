@@ -1,0 +1,338 @@
+.page--checkout {
+  background: #f5f5f5;
+
+  .your-order-heading{
+    margin-top: 100px;
+  }
+}
+
+.checkout-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+
+  > .checkout-container {
+    padding: 30px 0 0 0;
+  }
+
+  #checkout__shipping_payment,
+  #checkout_preview__shipping_payment {
+    background: transparent;
+    padding: 10px 0;
+  }
+
+  div#checkout__shipping_method,
+  #checkout__payment_method {
+    .form__single-choice-option {
+      background-color: #f2f2f2 !important;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+}
+
+#checkout,
+#checkout_preview {
+  .cart-summary__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > tr {
+      background: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #f2f2f2;
+      flex-wrap: wrap;
+
+      .cart-summary__cell--image {
+        width: 17%;
+        img {
+          border: none;
+          padding: 0;
+          border-radius: 5px;
+        }
+      }
+      .cart-summary__cell--details {
+        width: 55%;
+
+        > span{
+          font-weight: 700;
+        }
+
+        > div{
+          color: var(--js-text-color);
+        }
+      }
+      .cart-summary__cell--price {
+        width: 25%;
+
+        > div {
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .page__aside-main {
+    justify-content: flex-start;
+
+    .cart-summary {
+      height: auto;
+    }
+  }
+}
+
+
+#checkout_preview__shipping_payment {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+
+  .form__single-choice-option {
+    background-color: #f2f2f2 !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
+
+
+.checkout-totals{
+  span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--js-text-color) !important;
+  }
+}
+
+
+.custom-position-checkout-buttons {
+  position: sticky;
+  top: 30px;
+  margin-top: 30px;
+}
+
+.site-checkout .btn-primary {
+  background-color: var(--js-color-red);
+  border-radius: var(--js-border-radius);
+}
+.site-checkout .btn-primary:hover {
+  background-color: var(--js-color-red-hover);
+}
+
+label[for="coupon_code"] {
+  border: none !important;
+}
+.page--checkout .page__header{
+  position: relative;
+}
+
+.checkout-tracking{
+  position: absolute;
+  left: 0;
+  top: 115px;
+  width: 100%;
+  padding: 1rem 3rem;
+
+  .progress-steps-breadcrumbs__step{
+    position: relative;
+
+    &:before{
+      content: "";
+      width: calc(100% + 1px);
+      height: 1px;
+      background-color: var(--js-color-red);
+      display: block;
+      left: calc(50% + 10px);
+      position: absolute;
+      top: -10px;
+    }
+
+
+    &:nth-of-type(2){
+      &:before{
+        background-color: #ccc;
+      }
+    }
+
+
+
+    &:after{
+      display: none !important;
+    }
+
+    span{
+      font-weight: 600;
+      color: var(--js-color-red);
+      text-align: center;
+
+      &:before {
+        background-color: var(--js-color-red);
+        border: 6px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px var(--js-color-red);
+        content: "";
+        flex-shrink: 0;
+        height: 20px;
+        margin-right: 0.5rem;
+        width: 20px;
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -10px;
+      }
+    }
+
+    &:last-of-type{
+
+      &:before{
+        display: none;
+      }
+
+      span{
+        font-weight: 400;
+        color: #ccc;
+
+        &:before {
+          background-color: #fff;
+          border: 7px solid #fff;
+          border-radius: 50%;
+          box-shadow: 0 0 0 2px #ccc;
+        }
+      }
+    }
+  }
+}
+
+.page--checkout .page__aside-main{
+  .form__buttons {
+    justify-content: space-between;
+  }
+
+  .form__toggle {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .checkout-container {
+    padding: 30px 15px;
+
+    > .checkout-container {
+      padding-bottom: 0;
+    }
+  }
+
+  .page--checkout .page__content {
+    padding: 2rem 0;
+  }
+
+  .page--checkout .page__header {
+    position: static;
+  }
+
+  .page--checkout .your-order-heading {
+    margin-top: 20px;
+  }
+
+  .page--checkout .checkout-logo{
+    height: 70px;
+  }
+
+  .checkout-tracking{
+    display: block !important;
+    top: 120px;
+    padding: 0;
+
+    .progress-steps-breadcrumbs__step{
+      position: relative;
+      width: 33%;
+
+      span{
+        font-size: .8em;
+      }
+
+    }
+  }
+
+  .page--checkout .page__aside-main {
+    padding: 2rem 15px;
+    border-radius: 10px;
+    background: #ffffff;
+
+    .cart-summary__row {
+      background: #f2f2f2 !important;
+    }
+
+    .cart-summary__cell--image {
+      width: 80px !important;
+    }
+
+    .cart-summary__cell--details {
+      width: calc(100% - 80px) !important;
+
+      .cart-summary__info--item-name {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        line-height: 1.2;
+        overflow: hidden;
+      }
+    }
+
+    .cart-summary__cell--price {
+      align-self: flex-start;
+      padding-left: 90px;
+      width: 100% !important;
+      text-align: left;
+      padding-top: 0;
+      margin-top: -7px;
+      font-weight: 500;
+    }
+
+    .cart-summary__info--line-total {
+      font-size: 1.1rem !important;
+    }
+
+  }
+
+  .checkout-totals {
+    padding-top: 10px;
+    .checkout-totals__item {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #checkout_preview__shipping_payment {
+    padding: 30px 15px;
+  }
+
+  .site-checkout .btn-primary {
+    background-color: var(--js-color-red);
+    border-radius: var(--js-border-radius);
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    width: 100%;
+    margin-right: 0;
+  }
+
+
+  .page--checkout .page__aside-main{
+    .form__buttons {
+      justify-content: center;
+    }
+
+    .form__toggle {
+      font-size: .8em;
+    }
+  }
+
+}
