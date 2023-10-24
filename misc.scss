@@ -20,7 +20,8 @@
 }
 
 .btn-primary:not(.btn-facebook),
-.custom-add-to-cart {
+.custom-add-to-cart,
+.facets-page-top__menu .facet__batch-selection {
   background-color: var(--js-color-red);
   border-color: var(--js-color-red);
   color: #fff;
@@ -121,6 +122,12 @@
     width: 6px;
     height: 6px;
     margin: 2px;
+    background: #212529;
+
+    &.is-active{
+      background: #fff;
+    }
+
   }
 
   .grid-image__save-wishlist--saved:before, .grid-image__save-wishlist:before, .slider-image__save-wishlist--saved:before, .slider-image__save-wishlist:before{
