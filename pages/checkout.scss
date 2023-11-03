@@ -32,7 +32,7 @@
 }
 
 #checkout,
-#checkout_preview {
+#checkout_preview{
   .cart-summary__body {
     display: flex;
     flex-direction: column;
@@ -86,7 +86,59 @@
   }
 }
 
+.page--after-checkout {
+  .order-summary__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+    > tr {
+      background: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #f2f2f2;
+      flex-wrap: wrap;
+
+      .order-summary__cell--image {
+        width: 17%;
+        img {
+          border: none;
+          padding: 0;
+          border-radius: 5px;
+        }
+      }
+      .order-summary__cell:not(.order-summary__cell--image):not(.order-summary__cell--price) {
+        width: 55%;
+
+        > span{
+          font-weight: 700;
+        }
+
+        > div{
+          color: var(--js-text-color);
+        }
+      }
+      .order-summary__cell--price {
+        width: 25%;
+
+        > div {
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .page__aside-main {
+    justify-content: flex-start;
+
+    .order-summary {
+      height: auto;
+    }
+  }
+}
 #checkout_preview__shipping_payment {
   background: #ffffff;
   border-radius: 10px;
@@ -100,7 +152,7 @@
 }
 
 
-.checkout-totals{
+.checkout-totals, .order-summary-totals{
   span{
     font-size: 1rem;
     font-weight: 700;
@@ -158,8 +210,6 @@ label[for="coupon_code"] {
       }
     }
 
-
-
     &:after{
       display: none !important;
     }
@@ -209,6 +259,38 @@ label[for="coupon_code"] {
   }
 }
 
+.page--after-checkout{
+  .page__header {
+    margin-bottom: 120px;
+    .expand-summary{
+      display: none;
+    }
+  }
+  .checkout-tracking{
+    .progress-steps-breadcrumbs__step{
+
+      &:nth-of-type(2){
+        &:before{
+          background-color: var(--js-color-red);
+        }
+      }
+
+      &:last-of-type{
+        span{
+          font-weight: 600;
+          color: var(--js-color-red);
+
+          &:before {
+            background-color: var(--js-color-red);
+            border: 6px solid #fff;
+            box-shadow: 0 0 0 2px var(--js-color-red);
+          }
+        }
+      }
+    }
+  }
+}
+
 .page--checkout .page__aside-main{
   .form__buttons {
     justify-content: space-between;
@@ -236,7 +318,7 @@ label[for="coupon_code"] {
     position: static;
   }
 
-  .page--checkout .your-order-heading {
+  .page--checkout .your-order-heading, .page--after-checkout h2 {
     margin-top: 20px;
   }
 
@@ -258,6 +340,48 @@ label[for="coupon_code"] {
       }
 
     }
+  }
+
+  .page--after-checkout .page__aside-main {
+    padding: 2rem 15px;
+    border-radius: 10px;
+    background: #ffffff;
+
+    .order-summary__row {
+      background: #f2f2f2 !important;
+    }
+
+    .order-summary__cell {
+      width: calc(100% - 80px) !important;
+
+      .order-summary__info--item-name {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        line-height: 1.2;
+        overflow: hidden;
+      }
+    }
+
+    .order-summary__cell--image {
+      width: 80px !important;
+    }
+
+    .order-summary__cell--price {
+      align-self: flex-start;
+      padding-left: 90px;
+      width: 100% !important;
+      text-align: left;
+      padding-top: 0;
+      margin-top: -7px;
+      font-weight: 500;
+    }
+
+    .order-summary__info--line-total {
+      font-size: 1.1rem !important;
+    }
+
   }
 
   .page--checkout .page__aside-main {
@@ -335,4 +459,12 @@ label[for="coupon_code"] {
     }
   }
 
+  .page--after-checkout {
+    .page__aside-main {
+      margin-top: 50px;
+    }
+    .page__header {
+      margin-bottom: 20px;
+    }
+  }
 }

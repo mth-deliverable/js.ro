@@ -52,4 +52,24 @@
     }
   }
 
+  .offcanvas.drawer-user-login {
+
+    .offcanvas-header{
+      padding-bottom: 0;
+    }
+    .offcanvas-title {
+      margin-top: 30px;
+    }
+
+    .divider{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .form-details{
+      margin-bottom: 0;
+    }
+
+  }
+
 }

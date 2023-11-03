@@ -42,6 +42,8 @@
 
         > td:nth-of-type(2) {
           width: calc(100% - 6rem);
+          padding-bottom: 50px;
+          font-size: 0.85rem;
         }
       }
 
@@ -107,10 +109,9 @@
       font-weight: 600;
     }
   }
-
 }
 
-.cart-drawer-totals__item--shipping{
+.cart-drawer-totals__item--shipping {
   color: var(--js-text-color);
   font-weight: 400;
 }
